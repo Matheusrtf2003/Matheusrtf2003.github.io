@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Portifólio Designer</title>
+</head>
+<body>
+    <div class="hero-header">
+        <div class="container">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-a">M</i>
+                    <div class="logo-text">Matheus Rogério</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a class="menu" href="https://github.com/Matheusrtf2003">GITHUB</a></li>
+                        <li><a class="menu" href="https://wa.me/5548991223081">Contato</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container-2">
+                <div class="hero-pic">
+                    <img src="imgs/img-matheus.jpg" alt="profile-foto-author">
+                </div>
+                <div class="hero-text">
+                    <h5>Olá, sou <span class="input">Programador</span></h5>
+                    <h1>Matheus Rogério</h1>
+                    <p>Sou um desenvolvedor web e designer apaixonado por criar soluções digitais criativas e funcionais.</p>
+                    <p>Desde muito jovem, sempre tive interesse em tecnologia e design, e aos poucos fui me aprimorando nesses campos. Hoje, com experiência em diversas áreas da programação e do design, posso afirmar que sou capaz de transformar ideias em projetos reais e funcionais.</p>
+                    <p>Como desenvolvedor, estou sempre em busca das melhores tecnologias e ferramentas para otimizar meu trabalho e criar sites e aplicativos que oferecem a melhor experiência possível aos usuários. Além disso, sou um designer detalhista, que valoriza a estética e a usabilidade em todos os projetos que desenvolvo.</p>
+                    <p>Se você está procurando alguém para criar um site ou aplicativo que combine beleza, funcionalidade e tecnologia de ponta, pode contar comigo. Estou sempre disposto a ouvir suas ideias e transformá-las em projetos reais que superem suas expectativas.</p>
+                
+                    <div class="btn-group">
+                        <a href="https://github.com/Matheusrtf2003" class="btn active">GITHUB</a>
+                        <a href="https://wa.me/5548991223081" class="btn">Entrar em contato</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="https://www.facebook.com/matheusrogerio.rogerio.56"><span><ion-icon name="logo-facebook"></ion-icon></span></a>
+                        <a href="https://www.instagram.com/omatheus.rogerio/"><span><ion-icon name="logo-instagram"></ion-icon></span></a>
+                        <a href="https://github.com/Matheusrtf2003"><span><ion-icon name="logo-github"></ion-icon></span></a>
+                        <a href="https://www.linkedin.com/in/matheus-rogério-trindade-ferreira-018137221/"><span><ion-icon name="logo-linkedin"></ion-icon></span></a>
+                        <a href="https://wa.me/5548991223081"><span><ion-icon name="logo-whatsapp"></ion-icon></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="galeria-projetos">
+            <h3 class="titulo-galeria">Principais projetos</h3>
+    
+            <div class="container-projetos">
+                <div class="imagens">
+                    <a href="sitegato/Site-Gatos-main/index.html">
+                        <img src="imgs/img_gato.png" alt="">
+                        <h4>Site Gato</h4>
+                    </a>
+                </div>
+    
+                <div class="imagens">
+                    <a href="forms_vaga/index.html">
+                        <img src="imgs/Captura de tela 2023-04-23 174101.png" alt="">
+                        <h4>Formulário</h4>
+                    </a>
+                </div>
+    
+                <div class="imagens">
+                    <a href="modelo1/index.html">
+                        <img src="imgs/lixo.png" alt="">
+                        <h4>Lixo Eletrônico</h4>
+                    </a>
+                </div>
+
+                <div class="imagens">
+                    <a href="relogio digital/index.html">
+                        <img src="relogio digital/Captura de tela 2023-04-21 132122.png" alt="">
+                        <h4>Relógio</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- biblioteca js para efeito typed de texto -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+
+<!-- link integração icones redes sociais -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<!-- Código JS -->
+<script>
+    var togglebtn = document.querySelector(".togglebtn");
+    var nav = document.querySelector(".navlinks");
+    var links = document.querySelector(".navlinks li");
+
+    togglebtn.addEventListener("click", function(){
+    this.classList.toggle("click");
+    nav.classList.toggle("open");
+    })
+
+    var typed=new Typed(".input", {
+        strings:["Designer", "Frontend Developer", "Web Developer", "Backend Developer"],
+        typedSpeed:70,
+        backSpeed:55,
+        loop: true,
+    })
+</script>
+</html>

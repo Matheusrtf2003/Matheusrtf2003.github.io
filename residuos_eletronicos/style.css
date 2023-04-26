@@ -1,0 +1,80 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  clip-path: inset(0);
+}
+
+
+.line-1p4 {
+  line-height: 1.4;
+}
+
+.button-menu {
+  z-index: 1;
+  position: fixed;
+  right: 0;
+}
+
+.button-menu .dropdown {
+  display: none;
+}
+
+.button-menu #close {
+  display: none;
+}
+
+.button-menu:target {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+
+}
+
+.button-menu:target #close {
+  display: block;
+}
+
+.button-menu:target #burger {
+  display: none;
+}
+
+
+.button-menu:target .dropdown {
+  display: flex;
+
+}
+
+.dropdown {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+}
+
+.button-menu #close:target .dropdown {
+  display: none;
+}
+
+.button-menu a:hover {
+  position: sticky;
+  top: 0;
+}
+
+
+@media screen and (max-width: 650px) {
+
+  .button-menu:target {
+    width: 60%;
+    height: 100%;
+  }
+
+  .button-menu:target .dropdown {
+    height: 100%;
+    display: block;
+    text-align: center;
+  }
+
+}
